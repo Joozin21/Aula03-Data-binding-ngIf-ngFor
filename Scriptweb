@@ -1,0 +1,46 @@
+<h1>Eu <em>{{title}}</em> estou aqui.</h1>
+<p><abbr title="Data Binding">BD</abbr></p>
+<a href="https://www.youtube.com/watch?v=8RNHvXO5lqw" target="_blank" title="Não sei parar de te olhar">
+    <figure>
+        <img 
+        [src]= "imagem1" alt=""
+        [title]="des1"
+        height= "250px">
+        <figcaption>{{des1}}</figcaption>
+        </figure>  
+</a>
+<h1>Descrição</h1>
+<h2>{{descricao}}</h2>
+<p>{{pessoa.nome}}</p>
+<p>{{pessoa.idade}}</p>
+<p>{{pessoa.altura}}</p>
+<p>{{pessoa.aniversario}}</p>
+
+
+<h2 *ngFor="let marco of cliente">
+    <p *ngIf="marco.idade >= 20">{{marco.nome}}, {{marco.num}}</p>
+</h2>
+    
+<ul>
+    <li><figure>
+        <img [src]= "imagem2" alt="" [title]="des2" height= "250px">
+        <figcaption>{{des2}}</figcaption>
+        </figure></li>
+    <li><figure>
+        <img [src]= "imagem3" alt="" [title]="des3" height= "250px">
+        <figcaption>{{des3}}</figcaption>
+        </figure></li>
+    <li><figure>
+        <img [src]= "imagem4" alt=""[title]="des4" height= "250px">
+        <figcaption>{{des4}}</figcaption>
+        </figure></li>
+    <li><figure>
+        <img [src]= "imagem5" alt=""[title]="des5" height= "250px">
+        <figcaption>{{des5}}</figcaption>
+        </figure></li>
+    <li><figure>
+        <img 
+        [src]= "imagem6" alt=""[title]="des6" height= "250px">
+        <figcaption>{{des6}}</figcaption>
+        </figure></li>
+</ul>
